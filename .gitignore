@@ -1,0 +1,36 @@
+# ─── Rust / Cargo ────────────────────────────────────────────────────────────
+/target
+Cargo.lock           # remova esta linha se for um binário (não lib)
+
+# ─── WebAssembly compilado ────────────────────────────────────────────────────
+*.wasm
+*.optimized.wasm
+
+# ─── Node.js ─────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+
+# ─── Variáveis de ambiente / Segredos ────────────────────────────────────────
+# NUNCA commitar o .env com chaves privadas reais
+.env
+# O .env.example pode ser commitado (não contém segredos)
+!.env.example
+
+# ─── Snapshots de teste ───────────────────────────────────────────────────────
+test_snapshots/
+
+# ─── IDEs e editores ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Sistema operacional ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Ignorar demo ─────────────────────────────────────────────────────────────
+demo/
