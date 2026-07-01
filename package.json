@@ -1,0 +1,16 @@
+{
+  "name": "bairrou-coupons-scripts",
+  "version": "1.0.0",
+  "description": "Scripts de deploy e testes E2E do Smart Contract Bairrou Coupons",
+  "main": "scripts/deploy.js",
+  "type": "module",
+  "scripts": {
+    "deploy": "node scripts/deploy.js",
+    "e2e": "node scripts/e2e.js",
+    "deploy:e2e": "node scripts/deploy.js && node scripts/e2e.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^16.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
