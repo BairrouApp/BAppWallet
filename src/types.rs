@@ -26,7 +26,6 @@ pub struct Coupon {
     pub owner_wallet: Option<Address>,
     pub status: CouponStatus,
     
-    // Suporte a encadeamento futuro (inicializados como None)
     pub next_coupons: Option<Vec<u32>>,
     pub previous_coupons: Option<Vec<u32>>,
     pub unlock_conditions: Option<Vec<String>>,
@@ -39,7 +38,7 @@ pub struct Campaign {
     pub admin: Address,
     pub max_supply: u32,
     pub current_supply: u32,
-    pub expiration_time: u64, // Unix timestamp in segundos
+    pub expiration_time: u64,
     pub metadata_uri: String,
     pub is_paused: bool,
 }
